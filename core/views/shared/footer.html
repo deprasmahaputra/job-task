@@ -1,0 +1,29 @@
+
+<!-- Ini adalah "penggalan" HTML untuk bagian footer. Semua halaman akan menggunakan footer yang sama. -->
+
+  <footer>
+    <nav>
+      <ul>
+        <li>FAQ</li>
+        <li>CONTACT US</li>
+        <li>REFER</li>
+        <li>GIFT CARDS</li>
+        <li>BLOG</li>
+        <li>CAREERS</li>
+        <li>ALO YOGA</li>
+      </ul>
+    </nav>
+    <p>2022 Alo Moves. All Rights Reserved.</p>
+    <a href="">Terms</a>
+    <a href="">Privacy</a>
+  </footer>
+
+@@if(context.script) {
+  @@for(var i=0; i < script.length; i++) {
+  <script src="`+script[i]+`" ></script>
+  }
+}
+  </body>
+</html>
+
+<!-- Penggalan HTML footer berhenti di sini -->

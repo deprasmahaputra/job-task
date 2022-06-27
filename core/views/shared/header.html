@@ -1,0 +1,59 @@
+<!-- Ini adalah "penggalan" HTML bagian atas, dari <head>, dan pembuka <body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Ini adalah code untuk memasukkan file CSS. Biarkan seperti ini. -->
+    @@if(context.style) { @@for(var i=0; i < style.length; i++) {
+    <link rel="stylesheet" href="`+style[i]+`" />
+    } }
+    <!-- CSS berhenti di sini -->
+
+    <title>Alo Moves - CLONE</title>
+  </head>
+  <body>
+    <!-- Penggalan <header> mulai dari sini -->
+
+    <header class="header">
+      <nav class="header__container">
+        <svg
+          width="48px"
+          height="48px"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="48" height="48" fill="white" fill-opacity="0.01" />
+          <path
+            d="M7.94977 11.9498H39.9498"
+            stroke="black"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.94977 23.9498H39.9498"
+            stroke="black"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.94977 35.9498H39.9498"
+            stroke="black"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <h1 class="header__container--logo"><span>alo</span>moves</h1>
+      </nav>
+    </header>
+
+    <!-- <header> selesai di sini. Untuk isi halaman dan bagian footer, berada di file yang berbeda. -->
+  </body>
+</html>
